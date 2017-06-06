@@ -1,19 +1,23 @@
 {
-  "name": "15.2",
+  "name": "EatDatBurger",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fun app to create and eat burgers",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tiffani Elmore",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mysql": "^2.12.0",
-    "sequelize": "^3.27.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^2.0.1",
+    "method-override": "^2.3.9",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }
