@@ -1,8 +1,8 @@
-if (!global.hasOwnProperty('connection')) {
+
 
 // Set up MySQL connection.
-var mysql = require("mysql")
-, mysql = null
+var mysql = require("mysql");
+
 
   if (process.env.HEROKU_POSTGRESQL_GREEN_URL) {
     // the application is executed on Heroku ... use the postgres database
@@ -34,4 +34,4 @@ connection.connect(function(err) {
 });
 
 // Export connection for our ORM to use.
-module.exports = global.connection;
+module.exports = connection;
