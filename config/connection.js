@@ -3,26 +3,14 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-
-  if (process.env.HEROKU_POSTGRESQL_GREEN_URL) {
-    // the application is executed on Heroku ... use the postgres database
-    sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, {
-      dialect:  'postgres',
-      protocol: 'postgres',
-      port:     match[4],
-      host:     match[3],
-      logging:  true //false
-    })
-  } else {
-
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "",
+  host: "us-cdbr-iron-east-05.cleardb.net",
+  user: "b79c9dc9c55735",
+  password: "c71b43de",
   database: "burger"
 });
-}
+
 
 // Make connection.
 connection.connect(function(err) {
