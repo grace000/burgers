@@ -41,10 +41,18 @@ router.put("/:id", function(req, res) {
   });
 });
 
+// router.post("/burgers/delete/:id", function(req, res) {
+//   var condition = "id = " + req.params.id;
+
+//   burger.delete(condition, function() {
+//     res.redirect("/");
+//   });
+// });
+
 router.post("/burgers/delete/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  burger.delete(condition, function() {
+  burger.update(condition, function() {
     res.redirect("/");
   });
 });
