@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   host: "us-cdbr-iron-east-05.cleardb.net",
   user: "b79c9dc9c55735",
   password: "c71b43de",
-  database: "burger"
+  database: "heroku_998b61197b41b14"
 });
 
 
