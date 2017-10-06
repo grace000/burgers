@@ -19,5 +19,5 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
-  },
+  }
 }
