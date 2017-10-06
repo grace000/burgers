@@ -20,7 +20,4 @@
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
   },
-  "production": {
-  "use_env_variable": "DATABASE_URL"
-  }
 }
